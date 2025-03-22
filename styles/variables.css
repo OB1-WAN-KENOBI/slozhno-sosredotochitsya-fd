@@ -1,4 +1,17 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --font-family: "IBM Plex Mono", sans-serif;
+  --bg-txt-color: #ff0070;
+  --txt-color: #000028;
+  --txt-cards-clr: #f1b2ce;
+  --hdr-txt-clr: #db00ff;
+  --hover-brd-clr:rgba(255, 0, 112, 0.4);
+
+
+
+  --txt-tlt-clr: var(--bg-txt-color);
+  --txt-shadow: var(--bg-txt-color);
+  --point-clr: var(--bg-txt-color);
+  --corner-color: var(--bg-txt-color);
+  --menu-txt-clr: var(--bg-txt-color);
+  --bg-clr: var(--txt-color);
+}

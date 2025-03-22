@@ -10,6 +10,7 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+  padding-inline-start: 0;
 }
 
 h1,
@@ -37,6 +38,6 @@ button,
 a {
   color: currentColor;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 18px;
   line-height: inherit;
 }

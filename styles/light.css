@@ -5,12 +5,20 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-img: url(../images/cover-image-light.png)
+  --bg-txt-color: #ff0070;
+  --txt-color: #000028;
+  --txt-cards-clr: #f1b2ce;
+  --hdr-txt-clr: #db00ff;
+  --hover-brd-clr:rgba(255, 0, 112, 0.4);
+
+
+  --bg-clr: var(--txt-color);
+
+
+
 }
 
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  --bg-img: url(../images/cover-image-light.png)
 }
