@@ -4,21 +4,33 @@
   переключая тему
 */
 
-:root.theme-light {
-  --bg-img: url(../images/cover-image-light.png)
-  --bg-txt-color: #ff0070;
-  --txt-color: #000028;
-  --txt-cards-clr: #f1b2ce;
-  --hdr-txt-clr: #db00ff;
+:root .theme-light {
+  --font-family: 'IBM Plex Mono'; 
+  --bg-txt-color: #ff8dcb;
+  --txt-color: #353430;
+  --txt-cards-clr: #353430;
+  --hdr-txt-clr: #ffc2e6;
   --hover-brd-clr:rgba(255, 0, 112, 0.4);
-
-
+  --txt-tlt-clr: #353430;
+  --txt-shadow: var(--bg-txt-color);
+  --point-clr: var(--bg-txt-color);
+  --corner-color: #353430;
+  --menu-txt-clr: #353430;
   --bg-clr: var(--txt-color);
+}
 
-
-
+.theme-light .header__dark-theme {
+  display: none;
 }
 
 .theme-light .page {
-  --bg-img: url(../images/cover-image-light.png)
+  --bg-img: url(../images/cover-image-light.png);
+  --menu-txt-clr: #353430;
+  --hdr-txt-clr: #ffc2e6;
+  --txt-shadow: #ff8dcb;
+  --bg-txt-color: #ff8dcb;
+  --txt-color: #353430;
+  --txt-cards-clr: #353430;
+  --txt-tlt-clr: #353430;
+  --corner-color: #353430;
 }

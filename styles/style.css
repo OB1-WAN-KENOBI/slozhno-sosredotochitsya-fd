@@ -1,30 +1,22 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  background: var(--bg-clr);
+  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */  
+  background-color : var(--bg-clr);
   background-image: var(--bg-img);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 18px;
-  font-family: var(--font-family, "IBM Plex mono");
+  font-family: var(--font-family), 'IBM Plex mono', sans-serif;
 }
 
-
-.section__title {
-  color: var(--txt-tlt-clr);
-}
 
 .title-decor,
 .card__title, 
 .tlt-pictures{
   background-color: var(--bg-txt-color);
   color: var(--txt-color);
-}
-
-.card__text {
-  color: var(--txt-cards-clr);
 }
 
 ul {
@@ -37,15 +29,20 @@ ul {
   min-block-size: 100vh;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
+  padding: clamp(10px, 2vw, 20px);
+  padding-inline-start: 0;
 }
+
 
 .header__theme-menu-button {
   font-size: 18px;
   background: transparent;
   border: 1px solid transparent;
   color: var(--menu-txt-clr);
-  font-family: var(--font-family);
+  font-family: var(--font-family), 'IBM Plex mono', sans-serif;
   text-transform: lowercase;
+  font-weight: 400;
+  padding: 0px 13px;
 }
 
 .header__theme-menu-button_active {
@@ -72,8 +69,7 @@ ul {
   gap: 10px;
   list-style: none;
   padding: 0;
-  margin: 0;
-  margin-block-start: 20px;
+  margin-inline-start: 20px;
 }
 
 .header__dark-theme {
@@ -82,7 +78,7 @@ ul {
   right: 29px;
   text-transform: uppercase;
   background-color: transparent;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
   line-height: 20px;
@@ -91,16 +87,17 @@ ul {
   display: flex;
   gap: 10px;
   align-items: center;
-}
+} 
 
 .title {
-  font-family: var(--font-family), "IBM Plex mono", sans-serif;
+  font-family: var(--font-family), 'IBM Plex mono', monospace;
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 83%;
   color: var(--hdr-txt-clr);
   justify-self: start;
   text-shadow: 4px 4px 0 var(--txt-shadow);
+  word-spacing: 5px;
 }
 
 /* Точка после rec */
@@ -116,7 +113,7 @@ ul {
 
 .decorated-zone {
   position: relative;
-}
+} 
 
 .decorated-zone::before {
   content: "";
@@ -126,7 +123,7 @@ ul {
   border-inline-end: 1px solid var(--corner-color, #ff0070);
   border-block-start: 1px solid var(--corner-color, #ff0070);
   inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px); 
 }
 
 .decorated-zone::after {
@@ -149,20 +146,43 @@ ul {
   width: 491px;
   height: 71px;
   justify-self: end;
-  margin-inline-end: 20px;
-  font-family: var(--font-family), "IBM Plex Mono", sans-serif;
-  margin-inline-end: 0;
+  align-self: center;
+  font-family: var(--font-family), 'IBM Plex Mono', sans-serif;
 }
 
 .main {
   display: grid;
   gap: 80px;
-  padding: 60px 20px;
+  margin-block-start: 40px;
+  padding: clamp(10px, 2vw, 20px);
+  font-family: var(--font-family), 'IBM Plex mono', sans-serif;
+}
+
+.section__title {
+  color: var(--txt-tlt-clr);
+  font-size: 18px;
+}
+
+.cards {
+  display: grid;
+  gap: 20px;
+}
+
+.card__text {
+  color: var(--txt-cards-clr);
+  line-height: 130%;
+  font-weight: 400;
+  padding-block-start: 10px;
+}
+
+.card__title {
+  font-size: 18px;
 }
 
 .section__why {
   display: grid;
   grid-template-columns: clamp(240px, calc(100% / 3.25), 315px) 1fr;
+  column-gap: 33px;
 }
 
 .cards__reasons {
@@ -170,7 +190,7 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   grid-column-start: span 2;
-  padding: 0;
+  padding-block-start: 10px;
 }
 
 .section__what {
@@ -181,6 +201,11 @@ ul {
 .section__concentration {
   display: grid;
   grid-template-columns: clamp(240px, calc(100% / 3.25), 315px) 1fr;
+  column-gap: 32px;
+}
+
+.section__concentration li {
+  padding-block-start: 20px;
 }
 
 .section__pictures {
@@ -190,8 +215,8 @@ ul {
 
 .pictures__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); */
   gap: 20px;
   padding-inline-start: 0px;
 }
@@ -235,6 +260,8 @@ ul {
   justify-items: center;
   min-block-size: 100vh;
   grid-template-columns: 1fr;
+  margin-block-start: 40px;
+  padding: 20px;
 }
 
 .title-footer {
