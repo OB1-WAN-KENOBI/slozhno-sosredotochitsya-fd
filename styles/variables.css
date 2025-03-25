@@ -5,7 +5,7 @@
   --txt-cards-clr: #f1b2ce;
   --hdr-txt-clr: #db00ff;
   --hover-brd-clr:rgba(255, 0, 112, 0.4);
-  --bg-img: url(../images/cover-image-dark.png)
+  --bg-img: url(../images/cover-image-dark.png);
 
 
   --txt-tlt-clr: var(--bg-txt-color);
