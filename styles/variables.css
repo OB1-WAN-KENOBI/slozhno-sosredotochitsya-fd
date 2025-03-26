@@ -13,4 +13,11 @@
   --corner-color: #ff0070;
   --menu-txt-clr: #ff0070;
   --bg-clr: #000028;
+  --padding-adaptive: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  --padding-adaptive: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  --gap-small: 10px;
+  --gap-medium: 20px;
+  --gap-large: 50px;
+  --font-family: "IBM Plex Mono", sans-serif;
+  --column-adaptive: minmax(237px, calc(100% / 3.25));
 }

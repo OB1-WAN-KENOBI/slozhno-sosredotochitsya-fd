@@ -1,12 +1,13 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+
+/* Базовые стили для мобильных устройств */
 .page {
   background-image: var(--bg-img);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 18px;
-  font-family: var(--font-family), "IBM Plex mono", sans-serif;
+  font-family: var(--font-family);
 }
 
 .title-decor,
@@ -21,7 +22,7 @@ ul {
 }
 
 .header {
-  padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  padding: var(--padding-adaptive);
 }
 
 .header__theme-menu-button {
@@ -29,10 +30,10 @@ ul {
   background: transparent;
   border: 1px solid transparent;
   color: var(--menu-txt-clr);
-  font-family: var(--font-family), "IBM Plex mono", sans-serif;
+  font-family: var(--font-family);
   text-transform: lowercase;
   font-weight: 400;
-  padding: 0px 13px;
+  padding: 0 13px;
 }
 
 .header__theme-menu-button_active {
@@ -62,10 +63,9 @@ ul {
 
 .header__theme-menu-list {
   display: flex;
-  gap: 12px;
-  list-style: none;
-  padding: 0;
   flex-direction: column;
+  gap: 12px;
+  padding: 0;
 }
 
 .header__dark-theme {
@@ -81,12 +81,12 @@ ul {
   border-radius: 100%;
   color: var(--txt-tlt-clr);
   display: flex;
-  gap: 10px;
+  gap: var(--gap-small);
   align-items: center;
 }
 
 .title {
-  font-family: var(--font-family), "IBM Plex mono", monospace;
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   line-height: 83%;
@@ -96,13 +96,6 @@ ul {
   margin-block-start: 67px;
 }
 
-@media (width >= 768px) {
-  .title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-}
-
-/* Точка после rec */
 .header__dark-theme::after {
   content: "";
   display: inline-block;
@@ -124,8 +117,8 @@ ul {
   block-size: 25px;
   border-inline-end: 1px solid var(--corner-color, #ff0070);
   border-block-start: 1px solid var(--corner-color, #ff0070);
-  inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  inset-inline-end: var(--padding-adaptive);
+  inset-block-start: var(--padding-adaptive);
 }
 
 .decorated-zone::after {
@@ -135,25 +128,25 @@ ul {
   block-size: 25px;
   border-inline-start: 1px solid var(--corner-color, #ff0070);
   border-block-end: 1px solid var(--corner-color, #ff0070);
-  inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  inset-inline-start: var(--padding-adaptive);
+  inset-block-end: var(--padding-adaptive);
 }
 
 .title-decor {
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
-  font-family: var(--font-family), "IBM Plex Mono", sans-serif;
+  font-family: var(--font-family);
   margin-block: 54px;
   inline-size: clamp(355px, calc(100% / 2 - 10px), 500px);
 }
 
 .main {
   display: grid;
-  gap: 50px;
+  gap: var(--gap-large);
   margin-block-start: 31px;
-  padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  font-family: var(--font-family), "IBM Plex mono", sans-serif;
+  padding: var(--padding-adaptive);
+  font-family: var(--font-family);
 }
 
 .section__title {
@@ -163,14 +156,14 @@ ul {
 
 .cards {
   display: grid;
-  gap: 20px;
+  gap: var(--gap-medium);
 }
 
 .card__text {
   color: var(--txt-cards-clr);
   line-height: 130%;
   font-weight: 400;
-  padding-block-start: 10px;
+  padding-block-start: var(--gap-small);
 }
 
 .card__title {
@@ -200,8 +193,8 @@ ul {
 
 .cards__reasons {
   display: grid;
-  gap: 10px;
-  margin-block-start: 10px;
+  gap: var(--gap-small);
+  margin-block-start: var(--gap-small);
 }
 
 .section__what {
@@ -215,7 +208,7 @@ ul {
 }
 
 .section__concentration li {
-  padding-block-start: 20px;
+  padding-block-start: var(--gap-medium);
 }
 
 .section__pictures {
@@ -225,7 +218,7 @@ ul {
 
 .pictures__list {
   display: grid;
-  gap: 10px;
+  gap: var(--gap-small);
 }
 
 .list-item__pictures {
@@ -248,29 +241,18 @@ ul {
   margin: auto;
 }
 
-@media (width >= 768px) {
+/* Планшеты (≥768px) */
+@media (min-width: 768px) {
   .header {
     display: grid;
     justify-items: center;
     min-block-size: 100vh;
-    grid-template-columns: 1fr;
     grid-template-rows: 1fr min-content 1fr;
-    padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
     padding-inline-start: 0;
   }
 
   .header__theme-menu {
-    display: flex;
-    justify-self: end;
     margin-block-start: 171px;
-  }
-
-  .header__theme-menu-list {
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-    list-style: none;
-    padding: 0;
   }
 
   .header__dark-theme {
@@ -282,14 +264,14 @@ ul {
     margin-block-start: 5px;
   }
 
+  .title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
   .title-decor {
     inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 130%;
     justify-self: end;
     align-self: center;
-    font-family: var(--font-family), "IBM Plex Mono", sans-serif;
   }
 
   .main {
@@ -300,8 +282,8 @@ ul {
   .section__why,
   .section__what,
   .section__concentration {
-    grid-template-columns: minmax(237px, calc(100% / 3.25)) 1fr;
-    column-gap: 20px;
+    grid-template-columns: var(--column-adaptive) 1fr;
+    column-gap: var(--gap-medium);
   }
 
   .section__pictures {
@@ -309,9 +291,6 @@ ul {
   }
 
   .cards__reasons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     grid-column-start: span 2;
   }
 
@@ -322,8 +301,8 @@ ul {
 
   .pictures__list {
     display: grid;
-    gap: 20px;
-    padding-inline-start: 0px;
+    gap: var(--gap-medium);
+    padding-inline-start: 0;
   }
 
   .sunset {
@@ -353,74 +332,41 @@ ul {
   }
 
   .footer {
-    padding: 20px;
+    padding: var(--gap-medium);
     margin-block-start: 40px;
   }
 }
 
-@media (width >= 1024px) {
-  .header {
-    display: grid;
-    justify-items: center;
-    min-block-size: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr min-content 1fr;
-    padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-    padding-inline-start: 0;
-  }
-
+/* Десктопы (≥1024px) */
+@media (min-width: 1024px) {
   .header__theme-menu-list {
-    display: flex;
-    gap: 10px;
-    list-style: none;
-    padding: 0;
-    margin-inline-start: 20px;
     flex-direction: row;
+    gap: var(--gap-small);
+    margin-inline-start: var(--gap-medium);
   }
 
   .header__theme-menu {
-    display: flex;
     justify-self: center;
-    margin-block-start: 0px;
+    margin-block-start: 0;
   }
 
   .header .title {
-    margin-block-start: 0px;
-  }
-
-  .title-decor {
-    inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 130%;
-    justify-self: end;
-    align-self: center;
-    font-family: var(--font-family), "IBM Plex Mono", sans-serif;
-    margin-block: 54px;
+    margin-block-start: 0;
   }
 
   .section__why,
   .section__what,
   .section__concentration {
-    grid-template-columns: minmax(237px, calc(100% / 3.25)) 1fr;
     column-gap: 33px;
   }
 
   .section__pictures {
-    gap: 20px;
-  }
-
-    .main {
-    gap: 80px;
-    margin-block-start: 40px;
+    gap: var(--gap-medium);
   }
 
   .cards__reasons {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    grid-column-start: span 2;
+    gap: var(--gap-medium);
   }
 }
-
 /* Остановился на блоке main */
