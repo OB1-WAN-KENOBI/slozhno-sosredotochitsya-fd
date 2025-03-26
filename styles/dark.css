@@ -12,6 +12,7 @@
   --corner-color: #ff0070;
   --menu-txt-clr: #ff0070;
   --bg-clr: #000028;
+  --rec: visible;
 }
 
 .theme-dark .page {
@@ -27,4 +28,5 @@
   --corner-color: #ff0070;
   --menu-txt-clr: #ff0070;
   --bg-clr: #000028;
+  --rec: visible;
 }
