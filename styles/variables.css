@@ -1,10 +1,11 @@
+
 :root {
-  --font-family: 'IBM Plex Mono'; 
+  --font-family: "IBM Plex Mono";
   --bg-txt-color: #ff0070;
   --txt-color: #000028;
   --txt-cards-clr: #f1b2ce;
   --hdr-txt-clr: #db00ff;
-  --hover-brd-clr:rgba(255, 0, 112, 0.4);
+  --hover-brd-clr: rgba(255, 0, 112, 0.4);
   --bg-img: url(../images/cover-image-dark.png);
   --txt-tlt-clr: #ff0070;
   --txt-shadow: #ff0070;
