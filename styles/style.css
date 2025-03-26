@@ -410,6 +410,11 @@ ul {
     gap: 20px;
   }
 
+    .main {
+    gap: 80px;
+    margin-block-start: 40px;
+  }
+
   .cards__reasons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
