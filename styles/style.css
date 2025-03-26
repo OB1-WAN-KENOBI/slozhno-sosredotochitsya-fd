@@ -114,7 +114,7 @@ ul {
   color: var(--hdr-txt-clr);
   justify-self: start;
   text-shadow: 4px 4px 0 var(--txt-shadow);
-  margin-block-start: 67px;
+  margin-block-start: 67px; 
 }
 
 @media (width >= 768px) {
@@ -172,6 +172,7 @@ ul {
 .main {
 display: grid;
 gap: 50px;
+margin-block-start: 31px;
 padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 font-family: var(--font-family), "IBM Plex mono", sans-serif;
 }
@@ -201,12 +202,13 @@ font-family: var(--font-family), "IBM Plex mono", sans-serif;
 
 .section__why {
   display: grid;
+  gap: 22px;
 }
 
 .cards__reasons {
   display: grid;
-  gap: 20px;
-  padding-block-start: 10px;
+  gap: 10px;
+  margin-block-start: 10px;
 }
 
 .section__what {
@@ -216,6 +218,7 @@ font-family: var(--font-family), "IBM Plex mono", sans-serif;
 .section__concentration {
   display: grid;
   column-gap: 32px;
+  gap: 21px;
 }
 
 .section__concentration li {
@@ -224,7 +227,7 @@ font-family: var(--font-family), "IBM Plex mono", sans-serif;
 
 .section__pictures {
   display: grid;
-  gap: 20px;
+  gap: 9px;
 }
 
 .pictures__list {
@@ -245,7 +248,7 @@ font-family: var(--font-family), "IBM Plex mono", sans-serif;
   justify-items: center;
   min-block-size: 100vh;
   grid-template-columns: 1fr;
-  margin-block-start: 40px;
+  margin-block-start: 30px;
 }
 
 .title-footer {
@@ -268,15 +271,24 @@ font-family: var(--font-family), "IBM Plex mono", sans-serif;
   .header__theme-menu {
     display: flex;
     justify-self: end;
-    margin-block-start: 170px;
+    margin-block-start: 171px;
   }
 
   .header__theme-menu-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 13px;
     list-style: none;
     padding: 0;
+  }
+  
+  .header__dark-theme {
+    top: 23px;
+    right: 29px
+  }
+
+  .header .title {
+    margin-block-start: 5px;
   }
 
   .title-decor {
@@ -301,11 +313,20 @@ font-family: var(--font-family), "IBM Plex mono", sans-serif;
     column-gap: 20px;
   }
 
+  .section__pictures {
+    gap: 22px;
+  }
+
   .cards__reasons {
     display: flex;
     flex-direction: column;
     gap: 10px;
     grid-column-start: span 2;
+  }
+
+  .card__concentration {
+    display: grid;
+    gap: 12px;
   }
 
   .pictures__list {
@@ -342,6 +363,7 @@ font-family: var(--font-family), "IBM Plex mono", sans-serif;
 
 .footer {
   padding: 20px;
+  margin-block-start: 40px;
 }
 
 }
@@ -375,8 +397,8 @@ font-family: var(--font-family), "IBM Plex mono", sans-serif;
     margin-block-start: 0px;
   }
 
-  .title {
-    margin-block: 60px;
+  .header .title {
+    margin-block-start: 0px;
   }
 
   .title-decor {
@@ -395,6 +417,10 @@ font-family: var(--font-family), "IBM Plex mono", sans-serif;
   .section__concentration {
     grid-template-columns: minmax(237px, calc(100% / 3.25)) 1fr;
     column-gap: 33px;
+  }
+
+  .section__pictures {
+    gap: 20px;
   }
 
   .cards__reasons {

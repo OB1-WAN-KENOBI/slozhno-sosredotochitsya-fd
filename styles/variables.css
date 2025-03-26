@@ -6,12 +6,10 @@
   --hdr-txt-clr: #db00ff;
   --hover-brd-clr:rgba(255, 0, 112, 0.4);
   --bg-img: url(../images/cover-image-dark.png);
-
-
-  --txt-tlt-clr: var(--bg-txt-color);
-  --txt-shadow: var(--bg-txt-color);
-  --point-clr: var(--bg-txt-color);
-  --corner-color: var(--bg-txt-color);
-  --menu-txt-clr: var(--bg-txt-color);
-  --bg-clr: var(--txt-color);
+  --txt-tlt-clr: #ff0070;
+  --txt-shadow: #ff0070;
+  --point-clr: #ff0070;
+  --corner-color: #ff0070;
+  --menu-txt-clr: #ff0070;
+  --bg-clr: #000028;
 }

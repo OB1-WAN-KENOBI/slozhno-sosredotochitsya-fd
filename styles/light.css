@@ -12,11 +12,11 @@
   --hdr-txt-clr: #ffc2e6;
   --hover-brd-clr:rgba(255, 0, 112, 0.4);
   --txt-tlt-clr: #353430;
-  --txt-shadow: var(--bg-txt-color);
-  --point-clr: var(--bg-txt-color);
+  --txt-shadow: #ff8dcb;
+  --point-clr: #ff8dcb;
   --corner-color: #353430;
   --menu-txt-clr: #353430;
-  --bg-clr: var(--txt-color);
+  --bg-clr: #353430;
 }
 
 .theme-light .header__dark-theme {
@@ -33,4 +33,22 @@
   --txt-cards-clr: #353430;
   --txt-tlt-clr: #353430;
   --corner-color: #353430;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-txt-color: #ff8dcb;
+    --txt-color: #353430;
+    --txt-cards-clr: #353430;
+    --hdr-txt-clr: #ffc2e6;
+    --hover-brd-clr:rgba(255, 0, 112, 0.4);
+    --txt-tlt-clr: #353430;
+    --txt-shadow: #ff8dcb;
+    --point-clr: #ff8dcb;
+    --corner-color: #353430;
+    --menu-txt-clr: #353430;
+    --bg-clr: #353430;
+       
+  }
 }
