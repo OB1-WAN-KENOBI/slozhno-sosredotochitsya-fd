@@ -8,13 +8,6 @@
   font-family: var(--font-family);
 }
 
-.title-decor,
-.card__title,
-.tlt-pictures {
-  background-color: var(--bg-txt-color);
-  color: var(--txt-color);
-}
-
 .header {
   padding: var(--padding-adaptive-main);
   height: 100vh;
