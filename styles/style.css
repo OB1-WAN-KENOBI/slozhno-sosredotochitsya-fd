@@ -134,7 +134,7 @@
 .main {
   display: grid;
   gap: var(--gap-large);
-  margin-block-start: 106px;
+  margin-block-start: 40px;
   padding: var(--padding-adaptive-main);
 }
 
