@@ -4,7 +4,7 @@
   --txt-color: #353430;
   --txt-cards-clr: #353430;
   --hdr-txt-clr: #ffc2e6;
-  --hover-brd-clr: rgba(255, 0, 112, 0.4);
+  --hover-brd-clr:rgba(50, 49, 45, 0.4);
   --txt-tlt-clr: #353430;
   --txt-shadow: #ff8dcb;
   --point-clr: #ff8dcb;
@@ -29,6 +29,7 @@
   --corner-color: #353430;
   --bg-clr: #fff1f7;
   --rec: hidden;
+  --hover-brd-clr:rgba(50, 49, 45, 0.4);
 }
 
 @media (prefers-color-scheme: light) {
@@ -44,5 +45,6 @@
   --corner-color: #353430;
   --bg-clr: #fff1f7;
   --rec: hidden;
+  --hover-brd-clr:rgba(50, 49, 45, 0.4);
   }
 }

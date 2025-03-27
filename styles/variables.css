@@ -1,6 +1,5 @@
 
 :root {
-  --font-family: "IBM Plex Mono";
   --bg-txt-color: #ff0070;
   --txt-color: #000028;
   --txt-cards-clr: #f1b2ce;
@@ -14,7 +13,7 @@
   --menu-txt-clr: #ff0070;
   --bg-clr: #000028;
   --padding-adaptive: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  --padding-adaptive: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  --padding-adaptive-main: 0 clamp(10px, 0.0286rem + 2.5445vw, 20px);
   --gap-small: 10px;
   --gap-medium: 20px;
   --gap-large: 50px;
