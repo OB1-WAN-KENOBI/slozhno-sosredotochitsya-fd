@@ -15,12 +15,10 @@
   color: var(--txt-color);
 }
 
-ul {
-  list-style: none;
-}
-
 .header {
   padding: var(--padding-adaptive-main);
+  height: 100vh;
+  min-height: 668px;
 }
 
 .header__theme-menu-button {
@@ -28,7 +26,6 @@ ul {
   background: transparent;
   border: 1px solid transparent;
   color: var(--menu-txt-clr);
-  font-family: var(--font-family);
   text-transform: lowercase;
   font-weight: 400;
   width: 70px;
@@ -65,7 +62,7 @@ ul {
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--gap-small);
   padding: 0;
 }
 
@@ -88,7 +85,6 @@ ul {
 }
 
 .title {
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   line-height: 83%;
@@ -102,7 +98,6 @@ ul {
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
-  font-family: var(--font-family);
   margin-block-start: 55px;
   inline-size: clamp(355px, calc(100% / 2 - 10px), 500px);
 }
@@ -148,12 +143,18 @@ ul {
   gap: var(--gap-large);
   margin-block-start: 106px;
   padding: var(--padding-adaptive-main);
-  font-family: var(--font-family);
 }
 
 .section__title {
   color: var(--txt-tlt-clr);
   font-size: 18px;
+}
+
+.title-decor,
+.card__title,
+.tlt-pictures {
+  background-color: var(--bg-txt-color);
+  color: var(--txt-color);
 }
 
 .section {
@@ -168,7 +169,7 @@ ul {
 
 .card {
   display: grid;
-  gap: 10px;
+  gap: var(--gap-small);
 }
 
 .cards-grid {
@@ -205,7 +206,7 @@ ul {
 }
 
 .shadow-decor:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--txt-cards-clr);
 }
 
 .pictures__list {
@@ -235,7 +236,7 @@ ul {
 
 .article-cards {
   display: grid;
-  gap: 10px;
+  gap: var(--gap-small);
 }
 
 .cards__concentration {
@@ -343,7 +344,7 @@ ul {
 
   .article-cards {
     display: grid;
-    gap: 10px;
+    gap: var(--gap-small);
   }
 
   .cards__concentration {
