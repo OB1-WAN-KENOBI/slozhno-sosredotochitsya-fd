@@ -9,6 +9,7 @@
 }
 
 .header {
+  display: grid;
   padding: var(--padding-adaptive-main);
 }
 
@@ -45,9 +46,8 @@
 }
 
 .header__theme-menu {
-  display: flex;
   justify-self: end;
-  padding-block-start: 73px;
+  margin-block-start: 74px;
 }
 
 .header__theme-menu-list {
@@ -77,6 +77,14 @@
   visibility: var(--rec);
 }
 
+.grid-header {
+  display: grid;
+  min-block-size: 100vh;
+  padding-top: 20px;
+  align-items: start;
+  padding: var(--padding-adaptive-main);
+}
+
 .title {
   font-weight: 700;
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
@@ -84,15 +92,16 @@
   color: var(--hdr-txt-clr);
   justify-self: start;
   text-shadow: 4px 4px 0 var(--txt-shadow);
-  margin-block-start: 67px;
+  margin-block-start: 13px;
 }
 
 .title-decor {
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
-  margin-block-start: 55px;
+  /* margin-block-start: 55px; */
   inline-size: clamp(355px, calc(100% / 2 - 10px), 500px);
+  margin-block-end: 12px;
 }
 
 .header__dark-theme::after {
@@ -134,7 +143,7 @@
 .main {
   display: grid;
   gap: var(--gap-large);
-  margin-block-start: 106px;
+  margin-block-start: 40px;
   padding: var(--padding-adaptive-main);
 }
 
@@ -233,7 +242,7 @@
 }
 
 .cards__concentration {
-  margin-block-start: 20px;
+  margin-block-start: 22px;
 }
 
 /* Планшеты (≥768px) */
@@ -252,7 +261,7 @@
   }
 
   .header__theme-menu {
-    padding-block-start: 192px;
+    margin-block-start: 192px;
   }
 
   .header__dark-theme {
@@ -286,7 +295,7 @@
   }
 
   .section__pictures {
-    gap: 22px;
+    gap: 20px;
   }
 
   .cards__reasons {
@@ -339,10 +348,6 @@
     display: grid;
     gap: var(--gap-small);
   }
-
-  .cards__concentration {
-    margin-block-start: 20px;
-  }
 }
 
 /* Десктопы (≥1024px) */
@@ -355,7 +360,7 @@
 
   .header__theme-menu {
     justify-self: center;
-    padding-block-start: 19px;
+    margin-block-start: 19px;
   }
 
   .title-decor {
@@ -381,10 +386,6 @@
 
   .card__what {
     display: block;
-  }
-
-  .cards__concentration {
-    margin-block-start: 20px;
   }
 }
 /* Остановился на блоке main */
