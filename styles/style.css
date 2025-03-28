@@ -61,7 +61,7 @@
   position: absolute;
   /* top: 12px;
   right: 20px; */
-  inset-inline-end: clamp(20px, 0.0286rem + 2.5445vw, 20px);
+  inset-inline-end: clamp(20px, 4vw, 30px);
   inset-block-start: clamp(12px, 0.0286rem + 2.5445vw, 20px);
   text-transform: uppercase;
   background-color: transparent;
