@@ -10,8 +10,6 @@
 
 .header {
   padding: var(--padding-adaptive-main);
-  height: 100vh;
-  min-height: 668px;
 }
 
 .header__theme-menu-button {
@@ -134,7 +132,7 @@
 .main {
   display: grid;
   gap: var(--gap-large);
-  margin-block-start: 40px;
+  margin-block-start: 106px;
   padding: var(--padding-adaptive-main);
 }
 
@@ -157,7 +155,7 @@
 
 .section__pictures {
   display: grid;
-  gap: 11px;
+  gap: 12px;
 }
 
 .card {
@@ -238,9 +236,9 @@
 
 /* Планшеты (≥768px) */
 @media (min-width: 768px) {
-  .added-div {
+  .grid-header {
     display: grid;
-    gap: 20px;
+    min-block-size: 100vh;
   }
 
   .header {

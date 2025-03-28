@@ -1,4 +1,3 @@
-
 /* .theme-light .header__dark-theme {
   display: none;
 } */
@@ -15,22 +14,22 @@
   --corner-color: #353430;
   --bg-clr: #fff1f7;
   --rec: hidden;
-  --hover-brd-clr:rgba(50, 49, 45, 0.4);
+  --hover-brd-clr: rgba(50, 49, 45, 0.4);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-  --bg-img: url(../images/cover-image-light.png);
-  --menu-txt-clr: #353430;
-  --hdr-txt-clr: #ffc2e6;
-  --txt-shadow: #ff8dcb;
-  --bg-txt-color: #ff8dcb;
-  --txt-color: #353430;
-  --txt-cards-clr: #353430;
-  --txt-tlt-clr: #353430;
-  --corner-color: #353430;
-  --bg-clr: #fff1f7;
-  --rec: hidden;
-  --hover-brd-clr:rgba(50, 49, 45, 0.4);
+    --bg-img: url(../images/cover-image-light.png);
+    --menu-txt-clr: #353430;
+    --hdr-txt-clr: #ffc2e6;
+    --txt-shadow: #ff8dcb;
+    --bg-txt-color: #ff8dcb;
+    --txt-color: #353430;
+    --txt-cards-clr: #353430;
+    --txt-tlt-clr: #353430;
+    --corner-color: #353430;
+    --bg-clr: #fff1f7;
+    --rec: hidden;
+    --hover-brd-clr: rgba(50, 49, 45, 0.4);
   }
 }
