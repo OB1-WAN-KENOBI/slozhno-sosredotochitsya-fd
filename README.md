@@ -1,9 +1,5 @@
 # Hard to Focus — Landing Page with Practical Concentration Tips
-
-git clone https://github.com/OB1-WAN-KENOBI/slozhno-sosredotochitsya-fd.git
-cd slozhno-sosredotochitsya-fd
-# Open index.html in your browser
-Or visit the live demo directly:
+Visit the live demo directly:
 https://ob1-wan-kenobi.github.io/slozhno-sosredotochitsya-fd/
 
 ## Table of Contents
