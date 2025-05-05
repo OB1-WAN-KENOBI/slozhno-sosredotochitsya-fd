@@ -1,5 +1,11 @@
 # Hard to Focus — Landing Page with Practical Concentration Tips
 
+git clone https://github.com/OB1-WAN-KENOBI/slozhno-sosredotochitsya-fd.git
+cd slozhno-sosredotochitsya-fd
+# Open index.html in your browser
+Or visit the live demo directly:
+https://ob1-wan-kenobi.github.io/slozhno-sosredotochitsya-fd/
+
 ## Table of Contents
 - [Project Description](#project-description)  
 - [Functionality](#functionality)  
@@ -53,7 +59,6 @@ A single-page website called **“Hard to Focus”** helps users understand why 
 
 ## File Structure
 
-```plaintext
 
 ├─ index.html
 ├─ fonts/
