@@ -53,9 +53,24 @@ A single-page website called **“Hard to Focus”** helps users understand why 
 
 ---
 
+## Future Enhancements
+Integrate a built-in Pomodoro timer with customizable session lengths
+
+Expand the tips section with video demonstrations of focus exercises
+
+Optimize image loading (lazy-loading, WebP format)
+
+Improve accessibility (ARIA attributes, contrast ratios)
+
+Store session progress and statistics in localStorage or via a simple API
+
+Automate deployment using GitHub Actions
+
+
 ## File Structure
 
-
+```plaintext
+/
 ├─ index.html
 ├─ fonts/
 │   └─ fonts.css
@@ -73,16 +88,3 @@ A single-page website called **“Hard to Focus”** helps users understand why 
     ├─ mobile-icon.png
     └─ PNG illustrations for the “in pictures” section
 
-
-Future Enhancements
-Integrate a built-in Pomodoro timer with customizable session lengths
-
-Expand the tips section with video demonstrations of focus exercises
-
-Optimize image loading (lazy-loading, WebP format)
-
-Improve accessibility (ARIA attributes, contrast ratios)
-
-Store session progress and statistics in localStorage or via a simple API
-
-Automate deployment using GitHub Actions
